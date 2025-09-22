@@ -1,6 +1,4 @@
-![](./docs/public/og.png)
-
-# interaction-toolkit &middot; [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bunny-goorm/slash/blob/main/LICENSE) [![NPM badge](https://img.shields.io/npm/v/interaction-toolkit?logo=npm)](https://www.npmjs.com/package/interaction-toolkit)
+# interaction-toolkit &middot; [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bunny-goorm/interaction-toolkit/blob/main/LICENSE) [![NPM badge](https://img.shields.io/npm/v/interaction-toolkit?logo=npm)](https://www.npmjs.com/package/interaction-toolkit)
 
 [English](https://github.com/bunny-goorm/interaction-toolkit/blob/main/README.md) | 한국어 | [简体中文](https://github.com/bunny-goorm/interaction-toolkit/blob/main/README-zh_hans.md) | [日本語](https://github.com/bunny-goorm/interaction-toolkit/blob/main/README-ja_jp.md)
 

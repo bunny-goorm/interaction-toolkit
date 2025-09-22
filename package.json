@@ -2,8 +2,12 @@
   "name": "interaction-toolkit",
   "version": "1.0.1",
   "type": "module",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"

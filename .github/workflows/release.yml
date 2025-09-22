@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - "v*.*.*"
+      - 'v*.*.*'
 
 jobs:
   release:
@@ -20,19 +20,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
-          cache: "npm"
+          node-version: '18'
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build package
-        run: npm run build
+        run: yarn build
 
       - name: Create package
         run: |
           mkdir -p out
-          npm pack --pack-destination out
+          yarn pack --filename out/interaction-toolkit.tgz
 
       - name: Extract changelog
         id: extract-changelog
@@ -45,7 +45,7 @@ jobs:
           omit-heading: true
 
       - name: Display changelog
-        run: "cat ${{ steps.extract-changelog.outputs.output-file }}"
+        run: 'cat ${{ steps.extract-changelog.outputs.output-file }}'
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
